@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inform{
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form{
+    max-width: 320px;
+    align-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+span{
+    color: red
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input{
+    align-self: center;
+    height: 30px;
+    width: 320px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+}
+
+.button{
+    margin-top: 5px;
+    height: 30px;
+    background: #08070C;
+    width: 100px;
+    border:none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.secondary-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #08070C;
+}
+
+.black-friday{
+    width: 50%;
+}
+
+.products{
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+.focus{
+    color: white;
+}
+.focus-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.focus-item{
+    width: 30%;
+    border-radius: 10px;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
+    .main-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .secondary-content{
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: #08070C;
+    }
+    .focus-items{
+        display:flex;
+        flex-direction: column;
+}
+    .focus-item{
+        width: 100%;
+        border-radius: 10px;    
+        margin: 10px 0px 10px 0px;
+        width: 300px;
+        height: 300px;
+        align-content: center;
+ 
+    }
+
 }
